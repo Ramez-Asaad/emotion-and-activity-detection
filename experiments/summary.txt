@@ -1,0 +1,15 @@
+======================================================================
+EXPERIMENT SUMMARY
+======================================================================
+
+
+EMOTION RECOGNITION
+----------------------------------------------------------------------
+
+Model: CustomCNN
+  Architecture: custom
+  Pretrained: False
+  Train Acc: 98.29%
+  Val Acc: 64.22%
+  Parameters: 981,767
+  Training Time: 0.0s

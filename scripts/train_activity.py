@@ -54,35 +54,23 @@ def main():
     try:
         from data.activity_dataset import UCF101ImageFolder, UCF101Dataset
         
-        # Option 1: Simple image folder (RECOMMENDED)
-        # Use this if you have pre-extracted frames organized as:
-        # UCF101/train/class1/image1.jpg, image2.jpg, ...
-        print("Loading dataset using UCF101ImageFolder...")
-        train_dataset = UCF101ImageFolder(
+        # Use UCF101Dataset which handles video subfolders
+        # Our structure: UCF101/train/Walking/WalkingWithDog_v_.../frame_0000.jpg
+        print("Loading dataset using UCF101Dataset...")
+        train_dataset = UCF101Dataset(
             root_dir=config.TRAIN_DIR,
-            transform=train_transform
+            transform=train_transform,
+            frames_per_video=1,  # Load 1 frame per video folder
+            frame_sampling='center',  # Use center frame
+            use_videos=False  # We have extracted frames, not videos
         )
-        val_dataset = UCF101ImageFolder(
+        val_dataset = UCF101Dataset(
             root_dir=config.VAL_DIR,
-            transform=val_transform
+            transform=val_transform,
+            frames_per_video=1,
+            frame_sampling='center',
+            use_videos=False
         )
-        
-        # Option 2: Advanced loader with video support
-        # Uncomment this if you want to load from video files or use frame sampling
-        # train_dataset = UCF101Dataset(
-        #     root_dir=config.TRAIN_DIR,
-        #     transform=train_transform,
-        #     frames_per_video=1,
-        #     frame_sampling='center',  # 'center', 'random', or 'uniform'
-        #     use_videos=False  # Set to True if loading from .avi/.mp4 files
-        # )
-        # val_dataset = UCF101Dataset(
-        #     root_dir=config.VAL_DIR,
-        #     transform=val_transform,
-        #     frames_per_video=1,
-        #     frame_sampling='center',
-        #     use_videos=False
-        # )
         
         print(f"✓ Training samples: {len(train_dataset)}")
         print(f"✓ Validation samples: {len(val_dataset)}")

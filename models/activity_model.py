@@ -18,14 +18,13 @@ class ActivityModel(CustomCNN):
     Note: Update ACTIVITY_LABELS based on your specific UCF101 subset.
     """
     
-    # Activity labels for UCF101 subset (5 classes)
-    # TODO: Update these based on your actual UCF101 subset classes
+    # Daily human activity labels
     ACTIVITY_LABELS = {
-        0: 'Activity_1',
-        1: 'Activity_2',
-        2: 'Activity_3',
-        3: 'Activity_4',
-        4: 'Activity_5'
+        0: 'Walking',
+        1: 'Running',
+        2: 'Sitting',
+        3: 'Standing',
+        4: 'Jumping'
     }
     
     def __init__(self):

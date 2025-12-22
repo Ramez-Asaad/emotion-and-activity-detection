@@ -11,11 +11,17 @@ from .base_config import BaseConfig
 class ActivityConfig(BaseConfig):
     """Configuration for UCF101 activity recognition task."""
     
-    # Task specific
+    # Task-specific settings
     TASK_NAME = 'activity_recognition'
     NUM_CLASSES = 5
-    # TODO: Update with your actual UCF101 subset class names
-    CLASS_NAMES = ['Activity_1', 'Activity_2', 'Activity_3', 'Activity_4', 'Activity_5']
+    # Daily human activity classes
+    CLASS_NAMES = [
+        'Walking',
+        'Running',
+        'Sitting',
+        'Standing',
+        'Jumping'
+    ]
     
     # Dataset paths
     DATASET_NAME = 'UCF101'
@@ -30,7 +36,7 @@ class ActivityConfig(BaseConfig):
     # Training hyperparameters (can override base config)
     BATCH_SIZE = 32
     LEARNING_RATE = 0.001
-    NUM_EPOCHS = 50
+    NUM_EPOCHS = 20
     
     # Data augmentation settings
     USE_AUGMENTATION = True
