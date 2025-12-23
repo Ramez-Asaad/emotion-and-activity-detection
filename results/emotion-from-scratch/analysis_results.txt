@@ -1,0 +1,38 @@
+======================================================================
+Model Performance Analysis
+======================================================================
+
+Model: G:\OneDrive - Alamein International University\Uni stuff\semester 7 - Fall 25-26\Deep learning\project\checkpoints\emotion\best_model.pth
+Test Accuracy: 64.22%
+Precision: 0.6458
+Recall: 0.6422
+F1 Score: 0.6421
+
+======================================================================
+Classification Report
+======================================================================
+              precision    recall  f1-score   support
+
+       Angry     0.5335    0.5992    0.5644       958
+     Disgust     0.7188    0.4144    0.5257       111
+        Fear     0.5077    0.4160    0.4573      1024
+       Happy     0.8533    0.8196    0.8361      1774
+         Sad     0.5894    0.6204    0.6045      1233
+    Surprise     0.5132    0.5630    0.5369      1247
+     Neutral     0.7756    0.7738    0.7747       831
+
+    accuracy                         0.6422      7178
+   macro avg     0.6416    0.6009    0.6142      7178
+weighted avg     0.6458    0.6422    0.6421      7178
+
+
+======================================================================
+Per-Class Accuracy
+======================================================================
+Angry     : 59.92%
+Disgust   : 41.44%
+Fear      : 41.60%
+Happy     : 81.96%
+Sad       : 62.04%
+Surprise  : 56.30%
+Neutral   : 77.38%
