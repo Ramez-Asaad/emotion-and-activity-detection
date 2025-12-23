@@ -29,7 +29,7 @@ class EmotionConfig(BaseConfig):
     # Training hyperparameters (can override base config)
     BATCH_SIZE = 64  # FER-2013 images are smaller, can use larger batch
     LEARNING_RATE = 0.001
-    NUM_EPOCHS = 10
+    NUM_EPOCHS = 15
     
     # Data augmentation settings
     USE_AUGMENTATION = True

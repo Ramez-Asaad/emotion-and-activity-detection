@@ -10,7 +10,7 @@ import shutil
 from pathlib import Path
 
 # Source: Downloaded dataset location
-SOURCE_DIR = Path(r"C:\Users\Ramoz\.cache\kagglehub\datasets\msambare\fer2013\versions\1")
+SOURCE_DIR = Path(r"/home/secure-sight/emotion-and-activity-detection/data/.kaggle/datasets/FER2013")
 
 # Destination: Project dataset location
 PROJECT_ROOT = Path(__file__).parent.parent

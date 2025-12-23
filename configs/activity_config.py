@@ -36,7 +36,7 @@ class ActivityConfig(BaseConfig):
     # Training hyperparameters (can override base config)
     BATCH_SIZE = 32
     LEARNING_RATE = 0.001
-    NUM_EPOCHS = 20
+    NUM_EPOCHS = 25
     
     # Data augmentation settings
     USE_AUGMENTATION = True

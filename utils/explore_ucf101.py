@@ -8,7 +8,7 @@ Explore the actual structure of the downloaded UCF101 dataset.
 from pathlib import Path
 import os
 
-dataset_path = Path(r"C:\Users\Ramoz\.cache\kagglehub\datasets\matthewjansen\ucf101-action-recognition\versions\4")
+dataset_path = Path(r"/home/secure-sight/emotion-and-activity-detection/data/datasets/UCF101")
 
 print("=" * 70)
 print("UCF101 Dataset Structure")

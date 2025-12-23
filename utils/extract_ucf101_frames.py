@@ -50,16 +50,16 @@ def extract_frames_from_video(video_path, output_dir, max_frames=30, fps=1):
 def extract_all_frames():
     """Extract frames from all UCF101 videos."""
     
-    source_path = Path(r"C:\Users\Ramoz\.cache\kagglehub\datasets\matthewjansen\ucf101-action-recognition\versions\4")
+    source_path = Path(r"/home/secure-sight/emotion-and-activity-detection/data/datasets/UCF101")
     dest_path = Path("datasets/UCF101")
     
     # Activity mapping
     activity_mapping = {
-        'Walking': ['WalkingWithDog'],
-        'Running': ['Biking'],
-        'Sitting': ['BodyWeightSquats'],
-        'Standing': ['BoxingPunchingBag'],
-        'Jumping': ['JumpRope', 'JumpingJack', 'LongJump', 'HighJump']
+        'Walking': ['Walking'],
+        'Running': ['Running'],
+        'Sitting': ['Sitting'],
+        'Standing': ['Standing'],
+        'Jumping': ['Jumping']
     }
     
     print("=" * 70)

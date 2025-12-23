@@ -24,6 +24,7 @@ wheels/
 venv/
 ENV/
 env/
+data/
 
 # IDEs
 .vscode/
@@ -38,20 +39,17 @@ env/
 
 # Data
 datasets/
-*.csv
 *.h5
 *.hdf5
 
 # Model checkpoints and results
 checkpoints/
-results/
 *.pth
 *.pt
 *.ckpt
 
 # Logs
 logs/
-*.log
 
 # OS
 .DS_Store
