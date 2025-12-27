@@ -1,0 +1,82 @@
+======================================================================
+STATISTICAL ANALYSIS REPORT
+======================================================================
+
+Generated: 2025-12-23 13:20:14
+Total Models Analyzed: 7
+
+======================================================================
+1. OVERALL STATISTICS
+======================================================================
+       train_acc  ...  train_time_seconds
+count     7.0000  ...              7.0000
+mean     95.3101  ...            394.9275
+std       9.1147  ...            582.7755
+min      75.9727  ...             30.9384
+25%      95.5988  ...             45.4557
+50%     100.0000  ...             80.4935
+75%     100.0000  ...            510.2955
+max     100.0000  ...           1541.5584
+
+[8 rows x 7 columns]
+
+======================================================================
+2. BEST MODELS BY TASK
+======================================================================
+
+EMOTION RECOGNITION:
+  Best Validation Accuracy: vgg16 (66.51%)
+  Most Parameter Efficient: mobilenet_v2 (29.57 acc/M params)
+  Fastest Training: mobilenet_v2 (14.0 min)
+
+ACTIVITY RECOGNITION:
+  Best Validation Accuracy: mobilenet_v2 (82.05%)
+  Most Parameter Efficient: mobilenet_v2 (36.79 acc/M params)
+  Fastest Training: mobilenet_v2 (0.5 min)
+
+======================================================================
+3. OVERFITTING ANALYSIS
+======================================================================
+  vgg16                (emotion ):   9.46% gap - [OK] Good
+  mobilenet_v2         (emotion ):  25.31% gap - [X] Severe
+  mobilenet_v2         (activity):  17.95% gap - [WARN] Moderate
+  resnet18             (activity):  24.36% gap - [X] Severe
+  resnet50             (activity):  21.66% gap - [X] Severe
+  efficientnet_b0      (activity):  23.08% gap - [X] Severe
+  vgg16                (activity):  28.21% gap - [X] Severe
+
+======================================================================
+4. KEY CORRELATIONS
+======================================================================
+
+Correlation Matrix:
+                    train_acc  ...  overfitting_gap
+train_acc               1.000  ...            0.754
+val_acc                 0.741  ...            0.118
+params_millions        -0.529  ...           -0.286
+train_time_seconds     -0.985  ...           -0.644
+overfitting_gap         0.754  ...            1.000
+
+[5 rows x 5 columns]
+
+======================================================================
+5. KEY INSIGHTS
+======================================================================
+
+• Activity Recognition: MobileNetV2 achieves best accuracy (82.05%)
+  with only 2.23M parameters
+
+• VGG16 shows significant overfitting (24.4% gap)
+  Consider: More regularization, data augmentation, or dropout
+
+• Emotion Recognition: vgg16 achieves best accuracy (66.51%)
+  Emotion task shows lower accuracy overall - common for FER datasets
+
+• Average overfitting gap for emotion: 17.4%
+
+• Parameter Efficiency Rankings (Accuracy per Million Parameters):
+  - mobilenet_v2 (activity): 36.79
+  - mobilenet_v2 (emotion): 29.57
+  - efficientnet_b0 (activity): 19.16
+
+======================================================================

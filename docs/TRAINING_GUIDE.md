@@ -1,6 +1,6 @@
 # Pretrained Models - Quick Start Guide
 
-## 🎯 Overview
+## Overview
 
 Train and compare 5 pretrained models on both emotion and activity recognition tasks:
 - **ResNet-18** (~11.7M params)
@@ -11,7 +11,7 @@ Train and compare 5 pretrained models on both emotion and activity recognition t
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Train a Pretrained Model
 
@@ -36,7 +36,7 @@ python scripts/train_pretrained.py --model mobilenet_v2 --task activity --epochs
 
 ---
 
-## 📊 Transfer Learning Strategy
+## Transfer Learning Strategy
 
 ### Phase 1: Freeze Backbone (Epochs 1-5)
 - Load ImageNet pretrained weights
@@ -53,7 +53,7 @@ This prevents catastrophic forgetting of ImageNet features!
 
 ---
 
-## 📈 Experiment Tracking
+## Experiment Tracking
 
 All results are automatically logged to `experiments/results.csv`:
 
@@ -65,7 +65,7 @@ All results are automatically logged to `experiments/results.csv`:
 
 ---
 
-## 📓 View Results in Jupyter Notebook
+## View Results in Jupyter Notebook
 
 The Jupyter notebook `experiments/model_comparison.ipynb` provides:
 - ✅ Side-by-side model comparison
@@ -77,7 +77,7 @@ The Jupyter notebook `experiments/model_comparison.ipynb` provides:
 
 ---
 
-## 🎓 Training All Models
+## Training All Models
 
 ### Emotion Recognition (5 models × 20 epochs each)
 
@@ -103,7 +103,7 @@ python scripts/train_pretrained.py --model vgg16 --task activity --epochs 20
 
 ---
 
-## 📁 File Structure
+## File Structure
 
 ```
 project/
@@ -128,7 +128,7 @@ project/
 
 ---
 
-## 🔍 Compare Results
+## Compare Results
 
 ### View CSV Results
 ```bash
@@ -161,7 +161,7 @@ print(comparison)
 
 ---
 
-## ⚙️ Advanced Options
+## Advanced Options
 
 ### Custom Learning Rate
 ```bash
@@ -180,7 +180,7 @@ python scripts/train_pretrained.py --model mobilenet_v2 --task emotion --device 
 
 ---
 
-## 🎯 Expected Results
+## Expected Results
 
 ### Emotion Recognition (FER-2013)
 - **Baseline (Custom CNN)**: 64.22% val acc
@@ -194,7 +194,7 @@ python scripts/train_pretrained.py --model mobilenet_v2 --task emotion --device 
 
 ---
 
-## 🏆 Model Selection Guide
+## Model Selection Guide
 
 | Model | Best For | Pros | Cons |
 |-------|----------|------|------|
@@ -206,7 +206,7 @@ python scripts/train_pretrained.py --model mobilenet_v2 --task emotion --device 
 
 ---
 
-## ✅ Next Steps
+## Next Steps
 
 1. **Train all models** (10 experiments)
 2. **Compare results** in Jupyter notebook
@@ -216,4 +216,4 @@ python scripts/train_pretrained.py --model mobilenet_v2 --task emotion --device 
 
 ---
 
-**Ready to start training!** 🚀
+**Ready to start training!**

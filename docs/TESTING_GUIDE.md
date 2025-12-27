@@ -1,6 +1,6 @@
 # Testing Your Emotion Detection Model
 
-## 🎥 Real-Time Webcam Testing
+## Real-Time Webcam Testing
 
 Test your trained emotion model on live webcam feed with face detection!
 
@@ -12,12 +12,12 @@ python scripts/test_emotion_webcam.py
 
 ### Features
 
-- ✅ **Real-time face detection** using Haar Cascade
-- ✅ **Emotion prediction** with confidence scores
-- ✅ **Color-coded bounding boxes** for each emotion
-- ✅ **Probability bars** showing all emotion scores
-- ✅ **FPS counter** and face count display
-- ✅ **Screenshot capture** functionality
+- **Real-time face detection** using Haar Cascade
+- **Emotion prediction** with confidence scores
+- **Color-coded bounding boxes** for each emotion
+- **Probability bars** showing all emotion scores
+- **FPS counter** and face count display
+- **Screenshot capture** functionality
 
 ### Controls
 
@@ -39,7 +39,7 @@ python scripts/test_emotion_webcam.py
 
 ---
 
-## 🖼️ Single Image Testing
+## Single Image Testing
 
 Test on a single image file with detailed probability visualization.
 
@@ -64,7 +64,7 @@ python scripts/test_emotion_image.py image.jpg --device cpu
 
 ---
 
-## 📋 Requirements
+## Requirements
 
 Make sure you have trained a model first:
 
@@ -79,7 +79,7 @@ checkpoints/emotion/best_model.pth
 
 ---
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 ### Webcam not opening
 
@@ -127,7 +127,7 @@ python scripts/train_emotion.py
 
 ---
 
-## 🎯 Tips for Best Results
+## Tips for Best Results
 
 1. **Lighting**: Ensure your face is well-lit
 2. **Distance**: Stay 1-2 feet from the camera
@@ -137,7 +137,7 @@ python scripts/train_emotion.py
 
 ---
 
-## 📊 Understanding the Output
+## Understanding the Output
 
 ### Webcam Mode
 
@@ -182,7 +182,7 @@ Plus a saved visualization image showing:
 
 ---
 
-## 🚀 Advanced Usage
+## Advanced Usage
 
 ### Custom Model Path
 
@@ -207,7 +207,7 @@ done
 
 ---
 
-## 📝 Example Workflow
+## Example Workflow
 
 1. **Train the model**:
    ```bash
@@ -230,4 +230,4 @@ done
 
 ---
 
-**Enjoy testing your emotion detection model! 🎭**
+**Enjoy testing your emotion detection model!**

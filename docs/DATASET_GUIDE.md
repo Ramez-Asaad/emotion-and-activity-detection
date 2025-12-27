@@ -1,6 +1,6 @@
 # Dataset Preparation Guide
 
-## 📦 Overview
+## Overview
 
 This guide explains how to prepare your datasets for the two tasks:
 1. **FER-2013** - Facial Emotion Recognition
@@ -8,7 +8,7 @@ This guide explains how to prepare your datasets for the two tasks:
 
 ---
 
-## 🎭 FER-2013 Dataset Preparation
+## FER-2013 Dataset Preparation
 
 ### Dataset Structure
 
@@ -84,13 +84,13 @@ Training set class distribution:
 
 ---
 
-## 🎬 UCF101 Dataset Preparation
+## UCF101 Dataset Preparation
 
 ### Three Options for UCF101
 
 The UCF101 dataset loader supports three different formats:
 
-#### **Option 1: Pre-extracted Frames** (RECOMMENDED ⭐)
+#### **Option 1: Pre-extracted Frames** (RECOMMENDED)
 
 Best for training speed and simplicity.
 
@@ -260,7 +260,7 @@ train_dataset = UCF101Dataset(
 
 ---
 
-## 🔍 Verification
+## Verification
 
 ### Check Dataset Loading
 
@@ -287,7 +287,7 @@ Both scripts will display:
 
 ---
 
-## 📊 Dataset Statistics
+## Dataset Statistics
 
 ### Recommended Sizes
 
@@ -303,7 +303,7 @@ Both scripts will display:
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Issue: "Dataset not found"
 **Solution**: Check that your dataset path matches the config:
@@ -332,7 +332,7 @@ print(f"Expected path: {config.TRAIN_DIR}")
 
 ---
 
-## 💡 Tips
+## Tips
 
 1. **Start Small**: Test with a small subset first (100 images per class)
 2. **Balance Classes**: Try to have similar numbers of samples per class
@@ -342,7 +342,7 @@ print(f"Expected path: {config.TRAIN_DIR}")
 
 ---
 
-## 📝 Quick Commands
+## Quick Commands
 
 ```bash
 # Install dependencies

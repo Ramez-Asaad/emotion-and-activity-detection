@@ -4,7 +4,7 @@ A modular deep learning project implementing custom CNN architectures for two im
 1. **Facial Emotion Recognition** (FER-2013, 7 classes)
 2. **Human Activity Recognition** (UCF101 subset, 5 classes)
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 project/
@@ -45,7 +45,7 @@ project/
     └── UCF101/
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Setup Environment
 
@@ -108,7 +108,7 @@ python scripts/train_emotion.py
 python scripts/train_activity.py
 ```
 
-## 🎯 Model Architecture
+## Model Architecture
 
 ### Base CNN Architecture
 - **Input**: 3-channel RGB images (224×224)
@@ -140,7 +140,7 @@ model = ActivityModel()
 # Classes: Configurable based on your UCF101 subset
 ```
 
-## ⚙️ Configuration
+## Configuration
 
 Each task has its own configuration file in `configs/`:
 
@@ -159,17 +159,17 @@ IMAGE_SIZE = 224
 
 Modify these in the respective config files to customize training.
 
-## 📊 Training Features
+## Training Features
 
-- ✅ **Automatic GPU detection** and usage
-- ✅ **Data augmentation** (rotation, flip, color jitter)
-- ✅ **Learning rate scheduling** (ReduceLROnPlateau)
-- ✅ **Early stopping** to prevent overfitting
-- ✅ **Checkpoint saving** (best model + periodic saves)
-- ✅ **Training visualization** (loss/accuracy curves)
-- ✅ **Progress bars** with tqdm
+- **Automatic GPU detection** and usage
+- **Data augmentation** (rotation, flip, color jitter)
+- **Learning rate scheduling** (ReduceLROnPlateau)
+- **Early stopping** to prevent overfitting
+- **Checkpoint saving** (best model + periodic saves)
+- **Training visualization** (loss/accuracy curves)
+- **Progress bars** with tqdm
 
-## 📈 Evaluation & Visualization
+## Evaluation & Visualization
 
 The project includes comprehensive evaluation utilities:
 
@@ -187,7 +187,7 @@ print_evaluation_results(results)
 plot_confusion_matrix(results['confusion_matrix'], class_names)
 ```
 
-## 💻 Usage Examples
+## Usage Examples
 
 ### Training with Custom Configuration
 
@@ -233,7 +233,7 @@ predicted_class, emotion_label, probabilities = model.predict_emotion(image_tens
 print(f"Predicted emotion: {emotion_label}")
 ```
 
-## 🔧 System Requirements
+## System Requirements
 
 - **Python**: 3.8+
 - **PyTorch**: 2.0+ with CUDA 11.8
@@ -241,7 +241,7 @@ print(f"Predicted emotion: {emotion_label}")
 - **RAM**: 8GB+ recommended
 - **Storage**: ~5GB for datasets + checkpoints
 
-## 📦 Dependencies
+##  Dependencies
 
 Core dependencies:
 - `torch` - Deep learning framework
@@ -258,7 +258,7 @@ Install all dependencies:
 pip install -r requirements.txt
 ```
 
-## 🎓 Project Organization Benefits
+## Project Organization Benefits
 
 1. **Modularity**: Each component has a single responsibility
 2. **Reusability**: Shared utilities prevent code duplication
@@ -266,7 +266,7 @@ pip install -r requirements.txt
 4. **Maintainability**: Clear structure makes code easy to navigate
 5. **Professional**: Industry-standard project organization
 
-## 📝 Adding New Tasks
+## Adding New Tasks
 
 To add a new classification task:
 
@@ -276,7 +276,7 @@ To add a new classification task:
 4. Organize dataset in `datasets/YourDataset/`
 5. Run training!
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### GPU Not Detected
 ```bash
@@ -293,11 +293,11 @@ Ensure your dataset is organized in the correct structure under `datasets/` fold
 ### Out of Memory
 Reduce `BATCH_SIZE` in the config file.
 
-## 📄 License
+## License
 
 This project is for educational and research purposes.
 
-## 👥 Authors
+## Authors
 
 Deep Learning Project - Semester 7 (Fall 2025-26)  
 Alamein International University

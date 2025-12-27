@@ -1,6 +1,6 @@
 # Model Analysis & Comparison Guide
 
-## 📊 Analyzing Your Model Performance
+## Analyzing Your Model Performance
 
 ### Run Complete Analysis
 
@@ -24,7 +24,7 @@ All results saved in `results/emotion/`:
 
 ---
 
-## 🔬 Comparing with Pretrained Models
+## Comparing with Pretrained Models
 
 ### Run Model Comparison
 
@@ -57,14 +57,14 @@ ResNet34               61.45%       0.5892     21.28M        18.67
 MobileNetV2            55.12%       0.5234      3.50M        10.89
 ======================================================================
 
-🏆 Best Model: Custom CNN
+Best Model: Custom CNN
    Accuracy: 64.22%
    Parameters: 0.98M
 ```
 
 ---
 
-## 📈 Understanding the Results
+## Understanding the Results
 
 ### Confusion Matrix
 
@@ -93,7 +93,7 @@ Top misclassifications help you understand:
 
 ---
 
-## 🎯 Improving Performance
+## Improving Performance
 
 ### Based on Analysis Results
 
@@ -133,7 +133,7 @@ ROTATION_DEGREES = 20  # Increase from 15
 
 ---
 
-## 🚀 Next Steps
+## Next Steps
 
 ### 1. Analyze Current Model
 ```bash
@@ -167,7 +167,7 @@ python scripts/compare_models.py
 
 ---
 
-## 💡 Tips
+## Tips
 
 - **Run analysis after every training** to track progress
 - **Save all results** for comparison
@@ -177,7 +177,7 @@ python scripts/compare_models.py
 
 ---
 
-## 📝 Example Workflow
+## Example Workflow
 
 ```bash
 # 1. Train model
@@ -199,4 +199,4 @@ python scripts/compare_models.py
 
 ---
 
-**Happy analyzing! 📊**
+**Happy analyzing!**
